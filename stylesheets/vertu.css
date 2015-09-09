@@ -730,6 +730,69 @@ a, a:hover {
   user-select: none;
 }
 
+/* line 2, ../sass/core/_base.scss */
+.code {
+  border: 1px solid #ccc;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #efefef;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Verdana;
+}
+
+/* line 12, ../sass/core/_base.scss */
+.text {
+  font-size: 14px;
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  line-height: 1.8;
+}
+
+/* line 17, ../sass/core/_base.scss */
+.quote {
+  border-left: 5px solid #08c;
+  padding: 15px 25px;
+}
+
+/* line 24, ../sass/core/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Microsoft YaHei";
+  line-height: 1.8;
+  font-weight: normal;
+}
+
+/* line 30, ../sass/core/_base.scss */
+h1 {
+  font-size: 46px;
+}
+
+/* line 31, ../sass/core/_base.scss */
+h2 {
+  font-size: 38px;
+}
+
+/* line 32, ../sass/core/_base.scss */
+h3 {
+  font-size: 30px;
+}
+
+/* line 33, ../sass/core/_base.scss */
+h4 {
+  font-size: 22px;
+}
+
+/* line 34, ../sass/core/_base.scss */
+h5 {
+  font-size: 18px;
+}
+
+/* line 35, ../sass/core/_base.scss */
+h6 {
+  font-size: 14px;
+}
+
 /* line 12, ../sass/core/_grid.scss */
 .container {
   margin-left: auto;
