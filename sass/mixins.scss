@@ -1,0 +1,9 @@
+@charset 'utf-8';
+@mixin clearfix{
+	display:block;
+	clear:both;
+	visibility:hidden;
+	height:0;
+	overflow:hidden;
+	content:".";
+}

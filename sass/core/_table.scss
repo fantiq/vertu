@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* 基本表格 */
+$table_border_color : #ccc;
+.table{
+	tr{
+		td,th{
+			height: 38px;
+			line-height: 38px;
+			padding: 0 32px; 
+			font-size: 14px;
+		}
+		td{
+			border-top: 1px solid $table_border_color;
+		}
+		th{
+			border-bottom: 2px solid $table_border_color;
+			text-align: center;
+			font-weight: 600;
+		}
+	}
+}
+/* 边框表格 */
+.table_border{
+	border: 1px solid $table_border_color;
+	tr{
+		td,th{
+			border: 1px solid $table_border_color;
+		}
+		th{
+			border-bottom-width: 2px;
+		}
+	}
+}
+/* 条纹 */
+.table_stripe{
+	tr:nth-child(even){
+		background-color: lighten($table_border_color, 16%);
+	}
+}
+/* 鼠标悬停 */
+.table_hover{
+	tr:hover{
+		background-color: lighten($table_border_color, 16%) ;
+	}
+	th{
+		background-color: #fff;
+	}
+}

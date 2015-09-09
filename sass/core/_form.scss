@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/* bug fix */
+input{position:relative;top:1px;*top:1px;margin:0 4px 0 0;*margin:0 0 0 -4px;}
+$input_height : 38px;
+.ipt{
+	height: $input_height;
+	line-height: $input_height;
+	text-indent: 10px;
+	margin: 0 auto;
+	width: 100%;
+	font-size: 14px;
+	@include border-radius(5px);
+	border: 1px solid #ccc;
+	background-color: #fcfcfc;
+}
+.ipt_info,.ipt_info:focus{
+	background-color: rgba($c_cyan, 0.03);
+	border: 1px solid $c_cyan;
+}
+.ipt_error,.ipt_error:focus{
+	background-color: rgba($c_red, 0.03);
+	border: 1px solid $c_red;
+}
+.ipt_success,.ipt_success:focus{
+	background-color: rgba($c_green, 0.03);
+	border: 1px solid $c_green;
+}
+.ipt_min{
+	display: inline;
+	font-size: 12px;
+	height: 24px;
+	line-height: 24px;
+}
+.ipt_sm{
+	height: 30px;
+	line-height: 30px;
+}
+.ipt_lg{
+	height: 48px;
+	line-height: 48px;
+	font-size: 18px;
+	font-family: "Microsoft YaHei";
+}
+.ipt_group_btn{
+	position: relative;
+	.btn{
+		position: absolute;
+		// top: 10px;
+		top: 1px;
+		right: 1px;
+		@include border-top-left-radius(0);
+		@include border-bottom-left-radius(0);
+	}
+	.ipt{
+		width: 82%;
+		margin: 0;
+		@include border-top-right-radius(0);
+		@include border-bottom-right-radius(0);
+	}
+}
+
+
+.ipt_upload{
+	@include inline-block;
+	position: relative;
+	overflow: hidden;
+	input{
+		position: absolute;
+		top: 0;
+		right: -1px;
+		font-size: 100px;
+		color: #666;
+		background-color: #ddd;
+		cursor: pointer;
+		@include opacity(0);
+	}
+}

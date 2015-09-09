@@ -1,0 +1,23 @@
+@charset "UTF-8";
+.alert{
+	&:after{
+		@include clearfix;
+	}
+	@include border-radius(5px);
+	border: 1px solid #08c;
+
+}
+.close{
+	@include opacity(0.5);
+	background-color: transparent;
+	border: none;
+	font-size: 20px;
+	font-weight: 600;
+	color: #666;
+	float: right;
+	height: 30px;
+	width: 30px;
+	&:hover{
+		@include opacity(1);
+	}
+}

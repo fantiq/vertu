@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* 常用颜色 */
+$colors : (
+"dark":#404040,
+"gray":#eee,
+"light":#f8f8f8,
+"white":#fff,
+"cyan":#3bb2d0,
+"blue":#3887be,
+"darkblue":#223b53,
+"denim":#50667f,
+"navy":#28353d,
+"navy_dark":#222b30,
+"purple":#8a8acb,
+"teal":#41afa5,
+"green":#56b881,
+"yellow":#f1f075,
+"mustard":#fbb03b,
+"orange":#f9886c,
+"red":#e55e5e,
+"pink":#ed6498,
+);
+
+@each $key,$val in $colors{
+	.fill_#{$key}{
+		background-color: $val;
+	}
+}
+$c_dark : #404040;
+$c_gray:#eee;
+$c_light:#f8f8f8;
+$c_white:#fff;
+$c_cyan:#3bb2d0;
+$c_blue:#3887be;
+$c_darkblue:#223b53;
+$c_denim : #50667f;
+$c_navy:#28353d;
+$c_navy_dark:#222b30;
+$c_purple:#8a8acb;
+$c_teal:#41afa5;
+$c_green : #56b881;
+$c_yellow : #f1f075;
+$c_mustard : #fbb03b;
+$c_orange : #f9886c;
+$c_red : #e55e5e;
+$c_pink : #ed6498;

@@ -1,0 +1,92 @@
+﻿/* function */
+.f_fix,.f_cb:after,.f_cbli li:after{display:block;clear:both;visibility:hidden;height:0;overflow:hidden;content:".";}
+.f_cb,.f_cbli li{zoom:1;}
+/* height */
+/* width */
+/* line-height */
+@for $h from 12 through 24{
+	@if $h%2==0 {	
+		.f_lh#{$h}{
+			line-height:#{$h}px;
+		}
+	}
+}
+/* margin */
+
+/* padding */
+$size : 0,1,2,3,5,10,15,20,30;
+@each $var in $size{
+	.f_p#{$var}{
+		padding : #{$var}px;
+	}
+	.f_pl#{$var}{
+		padding-left : #{$var}px;
+	}
+	.f_pr#{$var}{
+		padding-right : #{$var}px;
+	}
+	.f_pt#{$var}{
+		padding-top : #{$var}px;
+	}
+	.f_pb#{$var}{
+		padding-bottom : #{$var}px;
+	}
+}
+/* border */
+/* outline */
+.f_olc{
+	outline: 1px solid #ccc;
+}
+/* background */
+/* font-size */
+@for $fs from 12 through 32{
+	@if $fs%2==0{
+		.f_fs#{$fs}{
+			font-size: #{$fs}px;
+		}
+	}
+}
+/* font-family */
+.f_ff0{font-family:arial,\5b8b\4f53;}
+.f_ff1{font-family:"Microsoft YaHei",\5fae\8f6f\96c5\9ed1,arial,\5b8b\4f53;}
+/* font-weight */
+.f_fwn{font-weight:normal;}
+.f_fwb{font-weight:bold;}
+
+/* display */
+.f_dn{display:none;}
+.f_db{display:block;}
+.f_di{display:inline;}
+.f_dib{display:inline-block;*display:inline;*zoom:1;}
+/* float */
+.f_fl{float:left;}
+.f_fr{float:right;}
+/* position */
+.f_pr{position:relative;}
+.f_prz{position:relative;zoom:1;}
+.f_pa{position:absolute;}
+/* cursor */
+.f_csp{cursor:pointer;}
+.f_csd{cursor:default;}
+.f_csh{cursor:help;}
+.f_csm{cursor:move;}
+/* text-align */
+.f_tal{text-align:left;}
+.f_tac{text-align:center;}
+.f_tar{text-align:right;}
+.f_taj{text-align:justify;text-justify:inter-ideograph;}
+/* text-decoration */
+.f_tdu,.f-tdu:hover{text-decoration:underline;}
+.f_tdn,.f-tdn:hover{text-decoration:none;}
+/* vertical-align */
+.f_vam,.f_vama *{vertical-align:middle;}
+
+
+.f_wsn{word-wrap:normal;white-space:nowrap;}
+.f_pre{overflow:hidden;text-align:left;white-space:pre-wrap;word-wrap:break-word;word-break:break-all;}
+.f_wwb{white-space:normal;word-wrap:break-word;word-break:break-all;}
+.f_oh{overflow:hidden;}
+.f_ti{overflow:hidden;text-indent:-30000px;}
+.f_ti2{text-indent:2em;}
+.f_toe{overflow:hidden;word-wrap:normal;white-space:nowrap;text-overflow:ellipsis;}
+.f_usn{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;}

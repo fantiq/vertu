@@ -1,0 +1,39 @@
+$screen-sm : 768px;
+$screen-sm-min : $screen-sm;
+$screen-md : 992px;
+$screen-md-min : $screen-md;
+// $screen-lg : 1200px;
+// $screen-lg-min : $screen-lg;
+$screen-lg : 1010px;
+$screen-lg-min : 1200px;
+
+$grid_columns : 24;
+
+.container{
+	@media (min-width:$screen-sm-min) {
+		width: $screen-sm;
+	}
+	@media (min-width:$screen-md-min) {
+		width: $screen-md;
+	}
+	@media (min-width:$screen-lg-min) {
+		width: $screen-lg;
+	}
+	margin-left: auto;
+	margin-right: auto;
+}
+.row{
+	margin-left: auto;
+	margin-right: auto;
+	&:after{
+		@include clearfix;
+	}
+	@for $col from 1 through $grid_columns{
+		.col#{$col}{
+			position: relative;
+			float: left;
+			width: percentage($col/$grid_columns);
+			overflow: hidden;
+		}
+	}
+}

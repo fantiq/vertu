@@ -1,0 +1,54 @@
+@charset "UTF-8";
+$list_box_radius : 5px;
+.list_box{
+	border: 1px solid #ccc;
+	@include border-radius($list_box_radius);
+	&>li>a{
+		display: block;
+		color: #08c;
+		height: 38px;
+		line-height: 38px;
+		padding: 0 10px;
+		font-size: 14px;
+		border-bottom: 1px solid #ccc;
+		&:hover{
+			background-color: #3bb2d0;
+			color: #fff;
+		}
+	}
+	&>li{
+		&:last-child>a{
+			border: none;
+			@include border-bottom-left-radius($list_box_radius);
+			@include border-bottom-right-radius($list_box_radius);
+		}
+		&:first-child>a{
+			@include border-top-left-radius($list_box_radius);
+			@include border-top-right-radius($list_box_radius);
+		}
+	}
+
+	.list_box_head,.list_box_foot{
+		background-color: #eee;
+	}
+	.list_box_head{
+		@include border-top-right-radius($list_box_radius);
+		@include border-top-left-radius($list_box_radius);
+		border-bottom: 1px solid #ccc;
+		font-size: 14px;
+		height: 38px;
+		line-height: 38px;
+		padding: 0 20px;
+	}
+	.list_box_foot{
+		padding: 10px 20px;
+		@include border-bottom-right-radius($list_box_radius);
+		@include border-bottom-left-radius($list_box_radius);
+		border-top: 1px solid #ccc;
+	}
+	.list_box_body{
+		padding: 20px;
+		font-size: 14px;
+		line-height: 1.5;
+	}
+}
