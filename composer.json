@@ -1,0 +1,13 @@
+{
+    "name": "fantasy/vertu",
+    "description": "composer test",
+    "type": "composer",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "fantiq",
+            "email": "fantiq@163.com"
+        }
+    ],
+    "require": {}
+}
